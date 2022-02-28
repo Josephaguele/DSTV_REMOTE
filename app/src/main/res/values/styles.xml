@@ -3,7 +3,15 @@
 
     <style name="button_style">
         <item name="android:textColor">#FFFFFF</item>
-        <item name="android:textSize">12sp</item>
+        <item name="android:textSize">13sp</item>
         <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="four_buttons">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:backgroundTint">@color/grey</item>
+        <item name="android:layout_height">42dp</item>
     </style>
 </resources>
