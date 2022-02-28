@@ -10,20 +10,19 @@
 
     <Button
         android:id="@+id/red"
-        style="@style/four_buttons"
-        android:layout_width="wrap_content"
+        style="@style/color_buttons"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:backgroundTint="@color/design_default_color_error"
-        app:layout_constraintEnd_toStartOf="@+id/subtitles"
+        app:layout_constraintBaseline_toBaselineOf="@+id/yellow"
+        app:layout_constraintEnd_toStartOf="@+id/white"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pg" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/white"
-        style="@style/four_buttons"
-        android:layout_width="wrap_content"
+        style="@style/color_buttons"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="@+id/red"
@@ -34,23 +33,23 @@
 
     <Button
         android:id="@+id/yellow"
-        style="@style/four_buttons"
-        android:layout_width="wrap_content"
+        style="@style/color_buttons"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFEB3B"
-        app:layout_constraintEnd_toStartOf="@+id/tv_guide"
-        app:layout_constraintStart_toEndOf="@+id/subtitles"
+        app:layout_constraintEnd_toStartOf="@+id/blue"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/white"
         app:layout_constraintTop_toBottomOf="@id/lang" />
 
     <Button
         android:id="@+id/blue"
-        style="@style/four_buttons"
-        android:layout_width="wrap_content"
+        android:layout_width="68dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#556DF1"
         app:layout_constraintBottom_toBottomOf="@id/yellow"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/yellow"
         app:layout_constraintTop_toBottomOf="@id/tv_guide" />
 
@@ -95,6 +94,7 @@
         android:id="@+id/pg"
         style="@style/four_buttons"
         android:layout_marginStart="16dp"
+        android:layout_marginEnd="4dp"
         android:text="PG"
         app:layout_constraintEnd_toStartOf="@+id/subtitles"
         app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -126,9 +126,9 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:text="TV GUIDE"
+        app:layout_constraintBottom_toBottomOf="@id/lang"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/lang"
-        app:layout_constraintBottom_toBottomOf="@id/lang"
         app:layout_constraintTop_toBottomOf="@id/Gotvbutton"
         tools:layout_editor_absoluteY="118dp" />
 
